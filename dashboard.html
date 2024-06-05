@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - OFWConnect</title>
+    <link rel="stylesheet" href="/Users/iantocle/Desktop/site/assets/Untitled-1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <img src="logo.png" alt="OFWConnect Logo"> <!-- Replace with your logo file -->
+                <h1>OFWConnect</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="auth.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#my-services">My Services</a></li>
+                    <li><a href="#my-orders">My Orders</a></li>
+                    <li><a href="#my-sales">My Sales</a></li>
+                    <li><a href="#lead-manager">Lead Manager</a></li>
+                    <li><a href="#messages">Messages</a></li>
+                    <li><a href="#notifications">Notifications</a></li>
+                </ul>
+            </nav>
+            <div id="my-services">
+                <h2>My Services</h2>
+                <!-- User's Services -->
+            </div>
+            <div id="my-orders">
+                <h2>My Orders</h2>
+                <!-- User's Orders -->
+            </div>
+            <div id="my-sales">
+                <h2>My Sales</h2>
+                <!-- User's Sales -->
+            </div>
+            <div id="lead-manager">
+                <h2>Lead Manager</h2>
+                <!-- Lead Manager -->
+            </div>
+            <div id="messages">
+                <h2>Messages</h2>
+                <!-- User's Messages -->
+            </div>
+            <div id="notifications">
+                <h2>Notifications</h2>
+                <!-- User's Notifications -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 OFWConnect</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (!localStorage.getItem('isLoggedIn')) {
+                alert('You need to log in to access the dashboard.');
+                window.location.href = 'auth.html';
+            }
+        });
+    </script>
+</body>
+</html>
